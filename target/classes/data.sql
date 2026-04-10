@@ -1,0 +1,2 @@
+-- Data seeding is now handled securely by com.staynomadly.api.config.DataSeeder.java
+-- This file is intentionally left blank to avoid ID generation conflicts with Hibernate.
