@@ -71,11 +71,7 @@ public class SecurityConfig {
         org.springframework.web.cors.CorsConfiguration configuration =
                 new org.springframework.web.cors.CorsConfiguration();
 
-        configuration.setAllowedOrigins(java.util.List.of(
-            "http://localhost:5173",
-            "https://stay-nomadly-frontend.vercel.app",
-            "https://stay-nomadly-frontend.vercel.app/"
-        ));
+        configuration.setAllowedOriginPatterns(java.util.List.of("*"));
 
         configuration.setAllowedMethods(java.util.List.of(
             "GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"
